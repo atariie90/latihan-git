@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white font-sans">
+
+  <!-- Navbar -->
+  <div class="flex items-center justify-between p-4 border-b">
+    <a href="/Project AAS El (1)/Project AAS El/home page/home.html">
+    <div class="text-2xl font-semibold text-gray-800">
+      Step-<span class="text-red-600">Up</span>
+    </a>
+    </div>
+    <div class="flex-1 mx-4">
+      <input type="text" placeholder="Search" class="w-full p-2 rounded-full border border-gray-300 px-4">
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="/Project AAS El (1)/Project AAS El/cart/cart.html">
+        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 00.293 1.414L7 17h10m-1 0a2 2 0 100 4 2 2 0 000-4zm-8 0a2 2 0 100 4 2 2 0 000-4z" />
+        </svg>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Product Container -->
+  <div id="product-container" class="max-w-5xl mx-auto p-4"></div>
+
+  <!-- Same Store -->
+  <div class="px-6 mt-10 mb-16 max-w-screen-xl mx-auto">
+    <h2 class="text-xl font-bold mb-2">From the same store</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4" id="samestore-products"></div>
+  </div>
+
+  <!-- JS -->
+  <script src="/Project AAS El (1)/Project AAS El/product/product.js"></script>
+</body>
+</html>

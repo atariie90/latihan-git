@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+  <div class="bg-white p-6 rounded-lg w-full">
+    <div class="flex items-center mb-6">
+      <button class="mr-4 text-xl" onclick="history.back()">&larr;</button>
+      <input type="text" placeholder="Search" class="flex-grow border rounded-full px-4 py-2" />
+      <div class="ml-4 flex items-center space-x-4">
+        <button>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M3 3h18v2H3zM3 7h18v2H3zM3 11h18v2H3zM3 15h18v2H3zM3 19h18v2H3z"/>
+          </svg>
+        </button>
+        <button>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <h2 class="text-xl font-bold mb-4">Checkout</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Kiri -->
+      <div class="md:col-span-2 space-y-4">
+        <div>
+          <h3 class="font-semibold mb-2 text-lg">Address</h3>
+          <p class="bg-gray-100 p-7 rounded text-sm">JL. Gas Alam, Gg. Abadi RT 04 RW 05, Cimanggis, Curug, Depok</p>
+        </div>
+
+        <div id="product-card" class="space-y-4">
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div id="product-card" class="border p-4 rounded">
+          <h3 class="font-semibold mb-2">Summary</h3>
+          <p class="flex justify-between"><span>Subtotal</span><span id="subtotal">Rp -</span></p>
+          <p id="deliveryInfo" class="flex justify-between"><span>Estimated Delivery</span><span>Rp 50.000,00</span></p>
+          <p class="flex justify-between font-bold"><span>Total</span><span id="total">Rp -</span></p>
+        </div>
+
+        <div class="border p-4 rounded">
+          <label class="block font-semibold mb-1">Payment</label>
+          <select class="w-full border rounded px-2 py-1">
+            <option>Dana</option>
+            <option>Gopay</option>
+            <option>OVO</option>
+          </select>
+        </div>
+
+        <div class="border p-4 rounded">
+          <label class="block font-semibold mb-1">Shipping</label>
+          <select class="w-full border rounded px-2 py-1">
+            <option>Standard</option>
+            <option>Express</option>
+          </select>
+        </div>
+
+        <button onclick="openModal()" class="w-full bg-red-900 text-white py-2 rounded">Make An Order</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-6 rounded-lg w-full max-w-sm text-center">
+      <p class="text-lg font-semibold mb-4">Your Order has been successfully placed</p>
+      <button onclick="window.location.href='/Project AAS El/home%20page/home.html'" class="bg-red-600 text-white px-4 py-2 rounded">
+  Okay
+</button>
+
+    </div>
+  </div>
+
+  <script src="/Project AAS El (1)/Project AAS El/checkout/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white p-6 font-sans text-sm flex justify-center">
+  <div class="w-full max-w-screen-md">
+
+   <!--Navbar-->
+  <div class="flex items-center justify-between p-4 border-b">
+    <a href="/Project AAS El (1)/Project AAS El/home page/home.html">
+    <div class="text-2xl font-semibold text-gray-800 mr-4">
+      Step-<span class="text-red-600">Up</span>
+    </div>
+  </a>
+    <div class="flex-1 mx-4">
+      <input type="text" placeholder="Search" class="w-full p-2 rounded-full border border-gray-300 px-4">
+    </div>
+    <div class="flex items-center space-x-4">
+       <a href="/Project AAS El (1)/Project AAS El/cart/cart.html">
+      <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 00.293 1.414L7 17h10m-1 0a2 2 0 100 4 2 2 0 000-4zm-8 0a2 2 0 100 4 2 2 0 000-4z" />
+      </svg>
+    </a>
+    </div>
+  </div>
+
+    <!-- Profile Info -->
+    <div class="flex space-x-6">
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-300 text-white rounded-full w-24 h-24 flex items-center justify-center text-2xl font-bold">MR</div>
+        <button class="mt-2 border px-4 py-1 rounded">Select Photo</button>
+      </div>
+
+      <div class="w-full">
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="font-semibold text-lg">Profile Info</h2>
+          <button id="toggleEditBtn" onclick="toggleEdit()" class="text-blue-500 text-sm font-medium">Edit Profile</button>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <strong>Name</strong>
+            <p id="nameText">Elmira</p>
+            <input type="text" id="nameInput" class="border p-2 w-full rounded hidden" value="Elmira" />
+          </div>
+          <div>
+            <strong>Date of Birth</strong>
+            <p id="dobText">Not set</p>
+            <input type="date" id="dobInput" class="border p-2 w-full rounded hidden" />
+          </div>
+          <div>
+            <strong>Gender</strong>
+            <p id="genderText">Not set</p>
+            <select id="genderInput" class="border p-2 w-full rounded hidden">
+              <option value="">Select</option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+            </select>
+          </div>
+          <div>
+            <strong>Email</strong>
+            <p id="emailText">elmira123@gmail.com</p>
+            <input type="email" id="emailInput" class="border p-2 w-full rounded hidden" value="elmira123@gmail.com" />
+          </div>
+          <div>
+            <strong>Mobile Number</strong>
+            <p id="phoneText">Not set</p>
+            <input type="tel" id="phoneInput" class="border p-2 w-full rounded hidden" />
+          </div>
+        </div>
+
+        <h2 class="font-semibold text-lg mb-2">My Address</h2>
+        <p id="addressText" class="bg-gray-100 p-3 rounded">JL. Gas Alam, Gg. Abadi RT 04 RW 05, Cimanggis, Curug, Depok</p>
+        <textarea id="addressInput" class="w-full p-2 border rounded h-24 hidden">JL. Gas Alam, Gg. Abadi RT 04 RW 05, Cimanggis, Curug, Depok</textarea>
+      </div>
+    </div>
+
+  </div>
+
+<script src="/Project AAS El (1)/Project AAS El/profile/profile.js"></script>
+
+</body>
+</html>

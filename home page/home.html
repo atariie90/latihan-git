@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step-Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+  
+  <!--Navbar-->
+  <div class="flex items-center justify-between p-4 border-b">
+    <div class="text-2xl font-semibold text-gray-800">
+      Step-<span class="text-red-600">Up</span>
+    </div>
+    <div class="flex-1 mx-4">
+      <input type="text" placeholder="Search" class="w-full p-2 rounded-full border border-gray-300 px-4">
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="/Project AAS El (1)/Project AAS El/cart/cart.html">
+      <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 00.293 1.414L7 17h10m-1 0a2 2 0 100 4 2 2 0 000-4zm-8 0a2 2 0 100 4 2 2 0 000-4z" />
+      </svg>
+    </a>
+   <a href="/Project AAS El (1)/Project AAS El/profile/profile.html" class="w-8 h-8 border border-black rounded-full flex items-center justify-center focus:outline-none relative">
+  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 12c2.209 0 4-1.791 4-4s-1.791-4-4-4-4 1.791-4 4 1.791 4 4 4zm0 2c-2.673 0-8 1.336-8 4v2h16v-2c0-2.664-5.327-4-8-4z"/>
+  </svg>
+</a>
+
+    </div>
+  </div>
+
+      <!-- Dropdown Menu -->
+      <div id="profileMenu" class="absolute right-0 top-12 bg-white border rounded shadow-lg hidden w-40 z-20">
+        <a href="/Project AAS El (1)/Pr AAS El/profile/profile.html" class="block px-4 py-2 hover:bg-gray-100">Profile</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>
+        <hr />
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-red-600">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- Iklan -->
+  <div class="flex justify-center mt-6">
+    <img src="/Project AAS El (1)/Project AAS El/img/photo_2025-05-09_18-59-29.jpg" alt="Puma Ad" class="w-[80%] rounded-lg shadow-md">
+  </div>
+
+  <!--Flash sale-->
+ <section class="flash-sale bg-gray-100 px-6 py-6 rounded-lg shadow-md mt-6 mx-auto max-w-screen-xl">
+  <h2 class="text-xl font-semibold mb-4 flex justify-start items-center">
+    Flash Sale
+    <span class="timer text-red-500 text-lg font-bold ml-4">--:--:--</span>
+  </h2>
+   <div class="products grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  </div>
+</section>
+
+
+  <!-- For You Section -->
+ <div class="px-6 mt-10 mb-16 max-w-screen-xl mx-auto">
+    <h2 class="text-xl font-bold mb-4">For You</h2>
+   <div class="grid grid-cols-2 sm:grid-cols-4 gap-4" id="foryou-products">
+</div>
+  </div>
+
+<!-- Footer -->
+<footer class="bg-[#891818] text-white px-6 py-10 mt-10">
+  <div class="text-center mb-6">
+    <h3 class="text-lg font-semibold mb-4">Collaboration With</h3>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <img src="/Project AAS El (1)/Project AAS El/img/image-removebg-preview (6).png" alt="Cash on Delivery" class="w-80">
+    </div>
+  </div>
+
+  <div class="flex flex-wrap justify-between gap-8 text-sm">
+    <div class="min-w-[150px]">
+      <h4 class="font-semibold mb-2">Information</h4>
+      <p class="mb-1">About Us</p>
+    </div>
+
+    <!-- Customer Service -->
+    <div class="min-w-[150px]">
+      <h4 class="font-semibold mb-2">Customer Service</h4>
+      <p class="mb-1">Call Us</p>
+      <p class="mb-1">How To Register</p>
+      <p class="mb-1">How To Log-In To An Existing Account</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="min-w-[150px]">
+      <h4 class="font-semibold mb-2">Follow Us</h4>
+      <div class="flex items-center gap-4">
+        <img src="/Project AAS El (1)/Project AAS El/img/tik-tok (2).png" alt="Tiktok" class="w-[25px] transition-transform duration-300 hover:scale-110 cursor-pointer">
+        <img src="/Project AAS El (1)/Project AAS El/img/instagram (2).png" alt="Instagram" class="w-[25px] transition-transform duration-300 hover:scale-110 cursor-pointer">
+        <img src="/Project AAS El (1)/Project AAS El/img/github (2).png" alt="Github" class="w-[25px] transition-transform duration-300 hover:scale-110 cursor-pointer">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/Project AAS El (1)/Project AAS El/home page/home.js"></script>
+
+</body>
+</html>
